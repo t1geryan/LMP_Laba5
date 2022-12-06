@@ -35,5 +35,5 @@ std::string Truck::get_type_string()
 
 std::string Truck::toString()
 {
-    return "Truck: " + Car::toString() + get_type_string();
+    return "Truck: " + Car::toString() + ' ' + get_type_string() + ' ' + std::to_string(tonnage) + "ton";
 }

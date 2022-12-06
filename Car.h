@@ -7,7 +7,7 @@ private:
 	std::string brand, number, driverName, driverSurname;
 public:
 	Car(std::string brand = "", std::string number = "", std::string dName = "", std::string dSurname = "");
-
+	virtual ~Car() {};
 	std::string get_brand();
 
 	std::string get_car_number();

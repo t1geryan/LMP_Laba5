@@ -43,6 +43,6 @@ void PassengerCar::set_color(int value)
 
 std::string PassengerCar::toString()
 {
-    return "Passenger: " + Car::toString() + ' ' + model + get_body_type_string();
+    return "Passenger: " + Car::toString() + ' ' + model + ' ' + get_body_type_string();
 }
 
