@@ -39,6 +39,12 @@ void CarPark::remove_car(const Car& car)
 		else ++i;
 }
 
+void CarPark::erase_car_if(std::function<bool(const info_t&)> lambda)
+{
+	auto i = std::remove_if(carList.begin(), carList.end(), lambda);
+	carList.erase(i, carList.end());
+}
+
 void CarPark::sort()
 { 
 	carList.sort([](const info_t& pCar1, const info_t& pCar2) {return pCar1->compare(*pCar2) == -1; });

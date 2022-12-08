@@ -1,7 +1,9 @@
-P Toyota Camry Sedan 0 A111AA36 Petr Petrov 
-T Toyota Tanker 30 E123UX136 Ivan Ivanov  
-T MAN Dump 20 C644TC23 Sidor Sidorov 
-P Lada Vesta Hatchback X777XX77 Aleksey Alekseev
-P Porsche Panamera Sedan 3431223 A123BC23 Maxim Maximov
-P Mazda CX5 Suv 156452 B531OH42 Anton Antonov
-T Volvo Tracktor 70 O984OO136 Andrey Andreev
+P Toyota A111AA36 Petr Petrov Camry SEDAN 0 
+T Toyota E123UX136 Ivan Ivanov TANKER 30
+T MAN C644TC23 Sidor Sidorov DUMP 20
+P Lada X777XX77 Aleksey Alekseev Vesta HATCHBACK 13412
+P Porsche A123BC23 Maxim Maximov Panamera SEDAN 3431223
+T Lada O934XT23 Oleg Ageev VAN 5 
+P Mazda B531OH42 Anton Antonov CX5 SUV 156452 
+T Volvo O984OO136 Andrey Andreev TRACKTOR 70 
+T Volkswagen O154AB66 Abram Kuznetsov VAN 8 

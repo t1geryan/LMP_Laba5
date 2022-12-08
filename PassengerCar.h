@@ -20,10 +20,13 @@ public:
 
 	CarBodyType get_body_type() const;
 	std::string get_body_type_string() const;
-	std::string get_model() const;
+	static CarBodyType string_to_body_type(std::string str);
 
+	std::string get_model() const;
+	
 	int get_color() const;
 	void set_color(int value);
+
 	std::string toString() const override;
 };
 

@@ -27,9 +27,24 @@ std::string Truck::get_type_string() const
     case DUMP:
         result = "Dump Truck";
         break;
-    default:
+    case TRACTOR:
+        result = "Tractor";
         break;
     }
+    return result;
+}
+
+TruckType Truck::string_to_truck_type(std::string str)
+{
+    TruckType result;
+    if (str == "TANKER")
+        result = TANKER;
+    else if (str == "VAN")
+        result = VAN;
+    else if (str == "DUMP")
+        result = DUMP;
+    else
+        result = TRACTOR;
     return result;
 }
 

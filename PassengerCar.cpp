@@ -22,7 +22,24 @@ std::string PassengerCar::get_body_type_string() const
     case ESTATE:
         result = "Estate";
         break;
+    case SUV:
+        result = "Suv";
+        break;
     }
+    return result;
+}
+
+CarBodyType PassengerCar::string_to_body_type(std::string str)
+{
+    CarBodyType result;
+    if (str == "SEDAN")
+        result = SEDAN;
+    else if (str == "HATCHBACK")
+        result = HATCHBACK;
+    else if (str == "ESTATE")
+        result = ESTATE;
+    else
+        result = SUV;
     return result;
 }
 
@@ -43,6 +60,6 @@ void PassengerCar::set_color(int value)
 
 std::string PassengerCar::toString() const
 {
-    return "Passenger: " + Car::toString() + ' ' + model + ' ' + get_body_type_string();
+    return "Passenger: " + Car::toString() + ' ' + model + ' ' + get_body_type_string() + ' ' + std::to_string(color) + "rgb";
 }
 
